@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial Web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="pt-auto">
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">Instalación de Windows</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#preparacion">Preparación</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#crear-usb">Crear USB booteable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#configuracion-bios">Configurar BIOS/UEFI</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#instalacion-windows">Instalación de Windows</a>
+                </li>    
+                <li class="nav-item">
+                    <a class="nav-link" href="#post-instalacion">Configuración Post-Instalación</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <!-- Encabezado -->
+  <header class="text-center py-5">
+      <img src="img/fondo.jpg" alt="Tu Foto" width="600" height="250">
+
+      <h5 class="mt-2"> ¿Queres instalar Windows en tu notebook, pero no sabes como hacerlo? A continuacion te dejamos un tutorial rapido y sencillo. <br>
+        No hace falta tener experiencias, ya que es accesible tanto para usuarios con conocimientos basicos, como para aquellos con mas experiencias.<br> <br>
+      Podras ver descripciones detalladas, y pasos claros para asegurar una comprension completa en este proceso del tutorial.  </h5>
+  </header>
+  <hr class="section-divider">
+
+  <!-- Sección Preparación -->
+  <section id="preparacion" class="py-5">
+      <div class="container">
+          <h2 class="text-center mb-4">Preparación</h2>
+          <p>Antes de comenzar, debemos asegurarnos de que nuestra notebook cumpla con las especificaciones mínimas de hardware para la versión de Windows que se desea instalar:</p>
+          <img src="img/imagen2.jpg" alt="Tu Foto" width="300" height="200"> <br>
+          <br>
+          <ul>
+              <li>Procesador: 1 GHz, o más rápido en un procesador compatible de 64 bits.</li>
+              <li>RAM: 4GB o más.</li>
+              <li>Almacenamiento: 64 GB o más de almacenamiento disponible.</li>
+              <li>Tarjeta gráfica: Compatible con DirectX 12 o posterior con controlador WDDM 2.0.</li>
+              <li>Pantalla: Resolución de pantalla de al menos 800 x 600.</li>
+              <li>Dispositivos de entrada: teclado y mouse. Configuraciones (solo si son necesarias).</li>
+          </ul>
+          <strong>IMPORTANTE:</strong><p>Debemos asegurarnos de tener un teclado y un mouse que funcionen. En el caso de tener dispositivos externos, verificar que estén correctamente conectados y configurados.</p>
+          <strong>RECURSOS NECESARIOS A TENER EN CUENTA:</strong>
+          <ul>
+              <li>Imagen ISO de Windows. Puede ser descargada desde el sitio oficial de Microsoft: <a href="https://www.microsoft.com/software-download/windows" target="_blank">Descargar ISO de Windows</a>.</li>
+              <li>Programa para crear USB booteable: En mi opinión recomiendo Ventoy o Rufus, que es una herramienta gratuita y fácil de usar. Se puede descargar aquí: <a href="https://rufus.ie/" target="_blank">Descargar Rufus</a>.</li>
+              <li>Unidad USB de al menos 8GB.</li>
+              <p>Por último, dejaremos un enlace oficial para descargar la ISO de Windows y Rufus.</p>
+              <p><a href="https://www.microsoft.com/software-download/windows">Descargar ISO de Windows</a></p>
+              <p><a href="https://rufus.ie/">Descargar Rufus</a></p>
+      </div>
+  </section>
+  <hr class="section-divider">
+
+  <!-- Sección Crear USB Booteable -->
+  <section id="crear-usb" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Crear USB Booteable</h2>
+        <p>Descargar e instalar el programa de creacion de USB booteable.</p>
+        <ol>
+        
+            <li>Descargar Rufus: Debemos ir al sitio oficial de Rufus e instalar la última versión de la misma. <br>
+                <a href="https://rufus.ie/es/" target="_blank">Rufus</a>.</li>
+            <li>Una vez instalado Rufus, abrir el archivo descargado.</li><br>
+            <ul>
+               <h4 class="text-center mb-4">Configuracion del programa</h4>
+                <ol>
+                    <li>Configurar las opciones de la siguiente manera:</li> <br>
+                    <p><strong>Dispositivo:</strong> Seleccionamos nuestra unidad USB</p>
+                  <p><strong>Seleccion de arranque:</strong>Hacemos clic en "Seleccionar" y elegimos la imagen ISO de Windows descargada.</p>
+                  <p><strong>Sistema de archivos:</strong> Dejamos la opción por defecto (FAT32 o NTFS).</p>
+                  <li>Hacemos clic en  "Empezar" para crear el USB booteable.( El proceso puede tardar varios minutos)</li> 
+                <br>
+                  <img src="img/rufus.jpg" alt="Tu Foto" width="300" height="350">
+                    <br>
+                 <br> <p><strong>Progreso y Finalizacion</strong></p>
+                 <p>Por último, una vez finalizado, Rufus nos mostrará un mensaje indicando que el proceso se ha completado. 
+                    Ahora sí, tenemos un USB booteable listo para instalar Windows.
+                    </p>
+                </ul>
+            </li>
+        </ol>
+    </div>
+  </section>
+  <hr class="section-divider">
+
+  <section id="configuracion-bios" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Configurar BIOS/UEFI</h2>
+        <p>Ya estamos a punto de terminar. Aquí configuraremos nuestra netbook, para poder arrancar desde el USB booteable creado anteriormente. </p>
+        <ol>
+            <li>Acceder al BIOS/UEFI.</li>
+        <ul>
+            <li>Reiniciamos la notebook.</li>
+            <li>Mientras arranca, presionamos repetidamente una de las siguientes teclas: F2, Del, Esc (la tecla puede variar según el fabricante).</li><br>
+        </ul>
+        
+            <li>Diferencias entre BIOS y UEFI</li>
+            </ol>
+          <p><strong>BIOS (Sistema Básico de Entrada/Salida)</p></strong>
+            <li>Es el sistema más antiguo.</li>
+            <li>Interfaz básica y limitada.</li>
+            <li>No soporta particiones de disco mayores a 2TB.</li>
+            <li>No incluye funciones avanzadas como arranque seguro.</li>
+            <br>
+          <p><strong> UEFI (Interfaz de Firmware Extensible Unificada)</p></strong>
+            <li> Es el sucesor modernos del BIOS.</li>
+            <li> Interfaz grafica y mas facil de usar.</li>
+            <li> Soporta particiones de disco mayores a 2TB</li>
+            <li>Incluye funciones avanzadas como arranque seguro y arranque rapido</li>
+      <br>
+            <p><strong>Cambiar el orden de arranque para que la USB sea la primera opción</strong></p>
+     <p><strong>Navegar el menu de arranque:</p></strong>
+     <li>Una vez dentro del BIOS/UEFI, usaremos las teclas de flecha para navegar al menú de arranque o "Boot".</li>
+    <br>
+     <p><strong>Cambiar el orden de arranque</strong></p>
+     <li>Encontramos la lista de dispositivos de arranque.</li>
+     <li>Movemos la unidad USB al primer lugar de la lista. Esto se puede hacer usando las teclas indicadas en la pantalla, generalmente F5 y F6 para mover hacia arriba o hacia abajo.</li>
+      </ol>
+      <br>
+      <h4><strong>Habilitacion del modo Legacy o UEFI (Segun sea necesario)</strong></h4>
+      <p><strong>Habilitar el modo Legacy o UEFI</strong></p>
+      <li>Si tu notebook utiliza UEFI, asegúrate de que la opción de arranque UEFI esté habilitada.</li>
+      <li>Si tu notebook utiliza BIOS, asegúrate de que el modo Legacy esté habilitado si es necesario.</li>
+ </li>
+ <br>
+    <h4><strong>Opciones de arranque</strong></h4>
+    <p><strong>Configurar opciones de arranque adicionales</strong></p>
+    <li>Algunos notebooks pueden requirir configuraciones adicioanles, como deshabilitar el arranque seguro (Secure Boot)<br> si esta usando un sistema operativo no firmado. </li>
+   <br>
+    <h4><strong>Menu de configuracion</strong></h4>
+   <p><strong>"Guardar y salir"</strong></p>
+   <li>Una vez que hatas configurado todas las opciones necesarias, navega al menu de "Guardar y salir".</li>
+   <li>Selecciona "Guardar cambios y salir" para guardar tus configuraciones y reiniciar la notebook.</li>
+        </ul>
+        </ol>
+
+     <hr class="section-divider">
+
+  <!-- Sección Configuración Post-Instalación -->
+  <section id="instalacion-windows" class="py-5">
+      <div class="container">
+          <h2 class="text-center">Instalacion de Windows</h2>
+       <p><strong>Arrancar desde el USB</strong></p>
+       <ol>
+        <li>Insertamos el USB booteable y encendemos la notebook</li>
+        <li> Deberia arrancar desde el USB y mostrar la pantalla de instalacion de windows.</li>
+     <br>
+       <p><strong>Proceso de instalacion</strong></p>
+      
+        <li>Seleccion de idioma, formato de hora y teclado:</li>
+        <li>Introduccion de la clave de producto (si es necesario):</li>
+        <li>Eleccion del tipo de instalacion:</li>
+       <p><strong>Actualizacion: Mantiene archivos y configuraciones. </p></strong>
+       <p><strong>Personalizada: Instala una copia nueva de Windows</p></strong>
+      <li><strong>Seleccion y particion del disco duro:</strong></li>
+      <p>Si es necesario, crear particiones nuevas para organizar tu disco</p>
+     
+        <li><strong>Proceso de copiado e instalacion</strong></li>
+        <p>Windows copiara los archivos y reiniciara varias veces.</p>
+        <li><strong>Configuracion inicial de Windows</strong></li>
+        <p>Configuramos nuestra cuenta de usuario, opciones de privacidad, etc.
+            Instalación de controladores.</p>
+        <p>Después de la instalación, Windows intentará automáticamente instalar los controladores necesarios. Si algunos faltan, descárgalos desde el sitio del fabricante.</p>
+      </ol>
+ </div>
+ <hr class="section-divider">
+
+      <section id="post-instalacion" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Configuracion Post-Instalacion</h2>
+            <p><strong>Buscar e instalar actualizaciones:</strong></p>
+            <ol>
+                <li>Iremos a Configuración > Actualización y seguridad > Windows Update.</li>
+                <li>Haremos clic en "Buscar actualizaciones" y permite que Windows instale las actualizaciones disponibles</li>
+            </ol>
+            <p><strong>Instalación de software adicional:</strong></p>
+            <ul>
+                <li>Navegadores: Chrome, Firefox, Edge, etc.</li>
+                <li>Suites de oficina: Microsoft Office, LibreOffice, etc.</li>
+                <li>Antivirus: Windows Defender (integrado), Avast, etc.</li>
+            </ul>
+            <p><strong>Configuraciones recomendadas:</strong></p>
+            <ul>
+                <li>Desactivar programas de inicio innecesarios: Ve al Administrador de tareas y
+                    deshabilita programas innecesarios en la pestaña de "Inicio".</li>
+                <li>Eliminar bloatware: Desinstala programas preinstalados que no utilices desde
+                    Configuración > Aplicaciones.</li>
+            </ul>
+            <p><strong>De esta manera ya podrás instalar Windows en tu notebook sin ninguna dificultad</p></strong>
+        </div>
+        <hr class="section-divider">
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
