@@ -1,0 +1,121 @@
+/* Estilos aplicados al cuerpo del documento */
+body {
+    font-family: 'Roboto', sans-serif; /* Establece la fuente principal como Roboto */
+    color: #ffffff; /* Color del texto principal */
+    background-color: #020c36; /* Color de fondo para el cuerpo */
+    margin: 0; /* Elimina los márgenes predeterminados del navegador */
+    padding: 0; /* Elimina el padding predeterminado del navegador */
+}
+
+/* Estilos para enlaces */
+a {
+    color: #46851c; /* Color del enlace */
+    text-decoration: none; /* Quita el subrayado por defecto */
+    font-weight: 500; /* Peso de fuente medio para el enlace */
+}
+
+a:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el cursor */
+}
+
+/* Navbar */
+/* Estilos para la barra de navegación */
+.navbar-brand {
+    font-size: 1.6rem; /* Tamaño de fuente para el nombre de la marca */
+    font-weight: 700; /* Peso de fuente negrita */
+}
+
+.navbar-nav .nav-link {
+
+    font-weight: 500; /* Peso de fuente medio para los enlaces */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #0c1755; /* Color de fondo al pasar el cursor sobre el enlace */
+   
+}
+
+/* Header */
+/* Estilos para el encabezado */
+header {
+
+    color: #ffffff; /* Color del texto del encabezado */
+    padding: 40px 20px; /* Espaciado interno del encabezado */
+    text-align: center; /* Alineación del texto en el centro */
+   
+}
+
+
+header h1 {
+    margin-top: 15px; /* Espacio arriba del título */
+    font-size: 2.8rem; /* Tamaño de fuente para el título principal */
+    font-weight: 700; /* Peso de fuente negrita */
+}
+
+header h5 {
+    margin-top: 15px; /* Espacio arriba del subtítulo */
+    font-size: 1.2rem; /* Tamaño de fuente para el subtítulo */
+    font-weight: 400; /* Peso de fuente normal */
+    line-height: 1.5; /* Altura de línea para mejorar la legibilidad */
+}
+
+/* Sections */
+/* Estilos para las secciones */
+section {
+    padding: 40px 20px; /* Espaciado interno de las secciones */
+}
+
+h2 {
+    font-size: 2.2rem; /* Tamaño de fuente para los subtítulos de sección */
+    margin-bottom: 20px; /* Espacio debajo del subtítulo de sección */
+    color: #c91f66; /* Color del texto de los subtítulos */
+    font-weight: 600; /* Peso de fuente seminegrita */
+}
+
+ul {
+    list-style-type: disc; /* Estilo de lista con viñetas */
+    padding-left: 20px; /* Espaciado a la izquierda para las listas */
+}
+
+ol {
+    list-style-type: decimal; /* Estilo de lista numerada */
+    padding-left: 20px; /* Espaciado a la izquierda para las listas numeradas */
+}
+
+p {
+    margin-bottom: 15px; /* Espacio debajo de los párrafos */
+    font-size: 1rem; /* Tamaño de fuente para los párrafos */
+    font-weight: 400; /* Peso de fuente normal */
+}
+
+/* Containers */
+/* Estilos para el contenedor principal */
+.container {
+    max-width: 1140px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 15px; /* Espaciado interno horizontal */
+}
+
+/* Buttons */
+/* Estilos para los botones */
+button, .btn {
+    border-radius: 4px; /* Bordes redondeados para los botones */
+}
+
+
+/* Footer */
+/* Estilos para el pie de página */
+footer {
+    background: #0fd451; /* Color de fondo del pie de página */
+    color: #fff; /* Color del texto del pie de página */
+    padding: 20px 20px; /* Espaciado interno del pie de página */
+    position: fixed; /* Fija el pie de página en la parte inferior */
+    width: 100%; /* Ancho completo del pie de página */
+    bottom: 0; /* Posiciona el pie de página en la parte inferior de la ventana */
+}
+
+footer p {
+    margin: 0; /* Elimina el margen alrededor del texto en el pie de página */
+    font-size: 0.9rem; /* Tamaño de fuente para el texto del pie de página */
+    font-weight: 400; /* Peso de fuente normal */
+}
